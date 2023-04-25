@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_ROOMDETAILS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_ROOMDETAILS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Room Details" >
+		<message><![CDATA[VikBooking Room Details]]></message>
+	</view>
+	<state>
+		<name>Room Details</name>
+		<description>VikBooking Room Details</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/vikbooking/admin/fields">
+			<field name="roomid" type="vbroomid" label="COM_VIKBOOKING_ROOMID_FIELD_SELECT_TITLE"  description="COM_VIKBOOKING_ROOMID_FIELD_SELECT_TITLE_DESC" />
+		</fieldset>
+	</fields>
+</metadata>

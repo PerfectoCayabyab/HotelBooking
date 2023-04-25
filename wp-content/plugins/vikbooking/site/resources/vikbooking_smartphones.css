@@ -1,0 +1,224 @@
+.vbdivsearch {
+	width: auto;
+}
+.vbtabletdonesearch {
+	width: 40%;
+	padding:0 10px 0 0;
+}
+.vbimglistdiv {
+	width: 100% !important;
+}
+.vblistimg {
+	width: 100%;
+}
+.vbcontdivtot {
+	margin: 26px 0 0 0 !important;
+}
+.vbselectr {
+	padding: 13px 25px 12px 25px;
+}
+.vbcheckinroom, .vbcheckoutroom {
+	width: 97% !important;
+	float: none !important;
+	margin: 5px 0 0 0 !important;
+}
+.room_container {
+}
+.vbsearchheadroom {
+	margin:-10px 0 0 -10px !important;
+	float: none !important;
+	border-radius: 0 !important;
+	border-bottom-right-radius:15px !important;
+	-moz-border-bottom-right-radius:15px !important;
+	-webkit-border-bottom-right-radius:15px !important;
+}
+.vbsearchheadperson {
+	float: none !important;
+	margin:0 0 0 -10px !important;
+	border-radius: 0 !important;
+	border-bottom-right-radius:15px !important;
+	-moz-border-bottom-right-radius:15px !important;
+	-webkit-border-bottom-right-radius:15px !important;
+}
+.vikfx-thumbslide-thumbnails {
+	padding: 0 !important;
+}
+.vbentercoupon {
+	width: 100% !important;
+	float: none !important;
+}
+.vbcustomfields input {
+	color:#666 !important;
+}
+
+/* Fix jQuery UI Datepicker Responsiveness */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto !important;
+}
+/* end fix */
+
+/* Search Results Overlay Dialog - Begin */
+.vbdialog-inner {
+	position: fixed;
+	width: 90%;
+	height: 80%;
+	max-height: 80%;
+	left: 5%;
+	top: 10%;
+	overflow: auto;
+}
+.vbdialog-bottom {
+	display: block;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+/* Search Results Overlay Dialog - End */
+@media only screen and (max-width : 550px) {
+	.vbo-results-head {
+		padding: 0 5px;
+	}
+	.vbo-results-head > span {
+		display: inline-block;
+		width: 100%;
+		border:0;
+		border-bottom:1px solid #ddd;
+		padding-right:0;
+	}
+	.vbo-results-head > .vbo-results-numadults, 
+	.vbo-results-head > .vbo-results-numchildren {
+		width: auto;
+	}
+	.vbsearchproominfo {
+		margin: 15px 0 0;
+	}
+	.vbsearchproominfo > span {
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+	}
+	.room_resultdiffusage, .vblistroomblock, .vbcontdivtot {
+		width: 100%;
+	}
+	.vblistroomblock, .vbcontdivtot, .vbcheckinroom {
+		border:0;
+	}
+	.vbcontdivtot {
+		margin: 0 !important;
+	}
+	.vbmodalrdetails {
+		display: none;
+	}
+	.vbo-showprc-room-block-multi {
+		margin: 0 0 0 27px;
+	}
+	.vbo-showprc-room-block {
+		width: 92%;
+	}
+	.vbo-showprc-wrapper {
+		padding: 20px 5px;
+	}
+	.room_container {
+		padding: 0;
+	}
+	.vbo-showprc-room-block-multi:after {
+		left: 19px;
+	}
+	.vbo-showprc-staydetails-nights {
+		float: left;
+		padding: 15px 15px 15px 45px
+	}
+	.vbo-showprc-staydetails-nights:after {
+		right: auto;
+		left:0;
+	}
+	.room_container .vbo-showprc-staydetails-nights {
+		float: none;
+		width: 100%;
+	}
+	.vikfx-thumbslide-container {
+		width: 100%;
+	}
+	.room_description_box {
+		width: 100%;
+		margin: 10px 0 0;
+		float: none;
+	}
+	.room_carats .vbtith3 {
+		margin: 6px 10px 5px 0;
+	}
+	.vbo-showprc-price-entry-radio {
+		width: 20%;
+	}
+	.vbo-showprc-price-entry-rateplan {
+		width: 80%;
+	}
+	.vbo-showprc-pricetable .vbo-showprc-price-entry {
+		padding: 20px 9px 20px 0;
+	}
+	.vbo-showprc-price-entry-cost {
+		width: 100%;
+		text-align: center;
+		float: none;
+		margin: 10px 0 0;
+	}
+	.vbo-showprc-option-entry-img {
+		width: 100%;
+		float: none;
+	}
+	.vbo-showprc-optionstable .vbo-showprc-option-entry {
+		padding: 20px 10px 20px;
+	}
+	.vbo-showprc-option-entry-name {
+		width: 100%;
+	}
+	.vbo-showprc-option-entry-cost {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0 0;
+	}
+	.vbo-showprc-option-entry-input {
+		width: 100%;
+		float: none;
+	}
+	.vbcustomfields .vbo-oconfirm-cfield-entry {
+		width: 100%;
+		float: none;
+	}
+	.vbo-booking-details-wrapper > div {
+		width: 100%;
+		margin: 0 0 5px;
+	}
+	.vbvordroominfo {
+		width: 100%;
+	}
+	.vbo-promotion-det-wrapper {
+		width:100%;
+		float: none;
+	}
+	.vbo-promotion-description {
+		padding: 0;
+	}
+	.vbo-promotion-wrapper {
+		width: 100%;
+		float: none;
+	}
+	.vbo-promotion-room-block {
+		width: 100%;
+	}
+	.vbo-promotion-dates-left .vbo-promotion-date-from {
+		margin: 0;
+	}
+	.vbo-promotion-dates-left > div {
+		padding: 5px 9px;
+		float: none;
+		width: 100%;
+	}
+	.vbo-promotion-dates-right {
+		float: none;
+		width: 100%;
+	}
+	.vbo-promotion-date-validuntil {
+		text-align: left;
+		padding: 7px 0 15px 45px;
+	}
+}

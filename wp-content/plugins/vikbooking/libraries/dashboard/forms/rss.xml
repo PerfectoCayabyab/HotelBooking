@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fields name="request">
+	<fieldset name="request">
+
+		<field
+			name="limit"
+			type="list"
+			required="false"
+			label="VBO_SYS_LIST_LIMIT"
+		>
+			<option value="3">3</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="8">8</option>
+			<option value="10">10</option>
+		</field>
+
+	</fieldset>
+</fields>

@@ -1,0 +1,113 @@
+/*
+ * Vik Booking - Colors adaptation for "Automatic Light/Dark" Appearance .
+ * Media queries should detect the OS/Browser preferences for the Dark Color Scheme
+ * and override the CSS variables within that preference.
+ * 
+ */
+
+/* Variable declarations when a dark color scheme is preferred. */
+@media (prefers-color-scheme: dark) {
+	:root {
+        /* Backgrounds */
+        --vbo-white-bg-color: #282b33;
+        --vbo-grey-bg-color: #0f1216;
+        --vbo-light-grey-bg-color: #383c47;
+        
+        /* Borders */
+        --vbo-border-color: #2a2a2a;
+        --vbo-light-border-color: #272a2f;
+        
+        /* Texts */
+        --vbo-text-color: rgba(255, 255, 255, 0.87);
+        --vbo-light-text-color: rgba(255, 255, 255, 0.77);
+        --vbo-contrast-text-color: #444;
+
+        /* Input Style */
+        --vbo-input-style: #1e222b;
+        --vbo-input-style-deactive: #282b33;
+        --vbo-input-style-nested-deactive: #181b22;
+
+        /* Colors */
+        --vbo-darkblue-color: #08738F;
+        --vbo-blue-color: #467388;
+        --vbo-blue-color-hover: #4B7B92;
+        --vbo-lightblue-color: #6a92a5;
+        --vbo-lightblue-color-hover: #649fbb;
+        --vbo-green-color: #4e7638;
+        --vbo-green-color-hover: #4c794c;
+        --vbo-orange-color: #CB7B2B;
+        --vbo-red-color: #b12a2a;
+    }
+
+    [data-vbo-expl]:after {
+        background-color: hsla(0, 0%, 42%, 0.9);
+    }
+    [data-vbo-expl]:before {
+        border-bottom-color: hsla(0, 0%, 42%, 0.9);
+    }
+    form .vbselectm, .vbdivsearch .vb-search-inner select, .vbo-showprc-optionstable .vbo-showprc-option-entry > div select, .vbo-availability-controls select, .vbageintervals select, .vbo-oconfirm-cfield-input select {
+        background: var(--vbo-white-bg-color) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+        background-size: 8px 10px;
+    }
+    .vbo-booking-upsell-room-wrap .vbo-upsell-option-entry {
+        border-bottom: 1px solid #3c414d;
+    }
+    .vbo-booking-upsell-room-wrap .vbo-upsell-option-entry-input select {
+        background: var(--vbo-light-grey-bg-color) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+        background-size: 8px 10px;
+    }
+    .vbo-booking-upsell-room-wrap .vbo-upsell-option-entry-input input {
+        background: var(--vbo-light-grey-bg-color);
+    }
+    .vbo-tableaux-table .vbo-tableaux-festcell {
+        background: #8b7186;
+    }
+    .vbo-tableaux-table td {
+        border-right: 1px solid #202020;
+    }
+    .vbo-tableaux-table tr {
+        border-bottom: 1px solid #202020;
+    }
+    .vikfxg-overlay {
+        background: var(--vbo-white-bg-color);
+    }
+    .vikfxg-wrapper .vikfxg-image .vikfxg-caption {
+        color: var(--vbo-text-color);
+    }
+    .vikfxg-wrapper button {
+        background: var(--vbo-light-grey-bg-color);
+        color: var(--vbo-text-color) !important;
+    }
+    .vikfx-gallery-container .vikfx-gallery-navigation-controls .vikfx-gallery-navigation-controls-prevnext > a {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .vikfx-gallery-container .vikfx-gallery-navigation-controls .vikfx-gallery-navigation-controls-prevnext > a:hover {
+        background: rgba(0, 0, 0, 1);
+    }
+    .vbcal .vbtdbusy {
+        color: #fff;
+    }
+    #ui-datepicker-div {
+        background: var(--vbo-white-bg-color);
+        border-color: var(--vbo-white-bg-color);
+        color: var(--vbo-text-color);
+    }
+    #ui-datepicker-div .ui-datepicker-header .ui-datepicker-title {
+        color: var(--vbo-text-color);
+    }
+    #ui-datepicker-div th {
+        color: var(--vbo-text-color) !important;
+    }
+    #ui-datepicker-div .ui-state-default, #ui-datepicker-div .ui-state-default, #ui-datepicker-div .ui-widget-header .ui-state-default {
+        color: var(--vbo-text-color);
+    }
+    #ui-datepicker-div table tbody > tr > td {
+        border: 1px solid #3c414d;
+    }
+    #ui-datepicker-div .ui-datepicker-prev, #ui-datepicker-div .ui-datepicker-next {
+        border: 1px solid #3c414d;
+    }
+    #ui-datepicker-div .ui-datepicker-group-first {
+        border-right: 1px solid #3c414d;
+    }
+}

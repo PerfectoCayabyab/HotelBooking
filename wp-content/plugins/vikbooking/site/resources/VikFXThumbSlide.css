@@ -1,0 +1,175 @@
+/* VikFX ThumbSlide */
+
+a, a:link, a:visited  {
+	text-decoration: none !important;
+}
+
+
+.vikfx-thumbslide-disabled {
+	color: #eee;
+}
+.vikfx-thumbslide-container {
+	margin-bottom: 2em;
+	position:relative;
+	display:table;
+	margin:0 auto;
+}
+.vbo-searchdet-head {
+	position: relative;
+}
+.vbo-searchdet-head .vblistroomnamediv {
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	border: 0;
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	padding-bottom: 0;
+}
+.vbo-searchdet-head .vblistroomnamediv .vblistroomname {
+	color: #fff;
+	padding: 10px;
+}
+.vbo-searchdet-head .vikfx-thumbslide-container {
+	width: 100%;
+}
+.vbo-searchdet-head .vikfx-thumbslide-thumbnails {
+	margin: 0 5px;
+}
+.vbdetroom {
+	padding: 20px;
+}
+.vbdetroom .vbroomimgdesc {
+	margin: 0;
+}
+.vbdetroom .room_description_box {
+	display: block;
+	margin: 0;
+	padding: 0 0 0 20px;
+	width: auto;
+}
+.vbdetroom .room_carats {
+	margin: 0;
+	display: block;
+}
+.vbdetroom .vbulcarats li {
+	margin: 0 5px 15px 0;
+}
+.vbdetroom .room_carats .vbtith3 {
+	float: none;
+	display: inline-block;
+	margin: 6px 10px 10px 0;
+	width: 100%;
+}
+.vbdetroom .vb_detcostroom {
+	padding: 0;
+}
+.vikfx-thumbslide-fade-container {
+	position: relative;
+	overflow: hidden;
+	z-index: 999;
+	text-align: center;
+	display: table;
+	margin: 0 auto;
+}
+.vikfx-thumbslide-navigation-controls {
+	text-align: center;
+	z-index: 10000;
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	top: 0%;
+	height: 100%;
+	transition:all 400ms ease-in-out 0s;
+	-moz-transition:all 400ms ease-in-out 0s;
+	-webkit-transition:all 400ms ease-in-out 0s;
+	-o-transition:all 400ms ease-in-out 0s;
+}
+.vikfx-thumbslide-container:hover .vikfx-thumbslide-navigation-controls {
+	opacity: 1;
+	transition:all 400ms ease-in-out 0s;
+	-moz-transition:all 400ms ease-in-out 0s;
+	-webkit-transition:all 400ms ease-in-out 0s;
+	-o-transition:all 400ms ease-in-out 0s;
+}
+.vikfx-thumbslide-fade-container a {
+	text-align: center;		
+	color: rgba(255,255,255,.8);
+}
+.vikfx-thumbslide-fade-container a:hover {
+	color: rgba(255,255,255,1);
+}
+.vikfx-thumbslide-fade-container a i {
+	text-shadow: 0 0 10px rgba(0,0,0, .4);
+}
+.vikfx-thumbslide-navigation-controls-prevnext {
+	text-align: right;
+	margin: 10px;
+	position: absolute;
+	bottom: 40px;
+	right: 0;
+}
+.vikfx-thumbslide-navigation-controls-prevnext a {
+	margin: 1px;
+	font-size: 20px;
+}
+.vikfx-thumbslide-navigation-controls-stasto {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.vikfx-thumbslide-navigation-controls-stasto a {
+	font-size: 42px;
+}
+.vikfx-thumbslide-previous-image, 
+.vikfx-thumbslide-next-image, 
+.vikfx-thumbslide-start-slideshow, 
+.vikfx-thumbslide-stop-slideshow {
+	display: none;
+	cursor: pointer;
+}
+
+.vikfx-thumbslide-thumbnails {
+	list-style: none;
+	margin-top: 1em;
+	overflow: hidden;
+	display:table;
+	padding: 0;
+	margin: 0;
+}
+
+.vikfx-thumbslide-thumbnails li {
+	float: left;
+}
+
+.vikfx-thumbslide-thumbnails li img {
+	max-height: 132px;
+}
+
+.vikfx-thumbslide-thumbnails a, .vikfx-thumbslide-thumbnails a:link, .vikfx-thumbslide-thumbnails a:visited  {
+	text-decoration: none !important;
+}
+
+.vikfx-thumbslide-selected-thumbnail img {
+	opacity:0.7;
+}
+.vikfx-thumbslide-navigation-controls a {
+	text-decoration: none !important;
+}
+.vikfx-thumbslide-caption div {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+	bottom: 9px;
+	color: #fff;
+	display: inline-block;
+	left: 0;
+	margin: 0 auto;
+	padding: 7px;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+img.vblistimg {
+	margin:0 0 10px 0;
+}

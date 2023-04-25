@@ -1,0 +1,1 @@
+ALTER TABLE `#__vikbooking_customers` ADD COLUMN `pic` varchar(256) DEFAULT NULL;

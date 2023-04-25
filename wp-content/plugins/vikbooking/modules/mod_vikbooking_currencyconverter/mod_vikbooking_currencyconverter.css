@@ -1,0 +1,46 @@
+.vbo_converting {
+	display: inline-block;
+	background: url('https://perfectocayabyab.github.io/HotelBooking/wp-content/plugins/vikbooking/modules/mod_vikbooking_currencyconverter/images/converting.gif');
+	min-width: 50px;
+	min-height: 8px;
+}
+.vbcurconv-flag {
+	display: inline-block;
+	float: left;
+	padding: 5px 5px 0;
+}
+#vbcurconv-flag-img {
+	margin-right: 3px;
+}
+.vbcurconv-menu {
+	float: right;
+	overflow: hidden;
+	min-width: 100px;
+}
+.vbcurconvcontainer {
+	padding: 5px 0 5px 7px;
+	height: 45px !important;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+}
+.vbcurconv-menu select {
+	display: inline-block;
+	max-width: 100% !important;
+	height: 34px !important;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size: 8px 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	min-width: unset;
+	margin-bottom: 0 !important;
+	border: 0;
+}
+.vbcurconvcontainer select[multiple] {
+    height: auto;
+    background-image: none;
+    padding: 5px;
+}

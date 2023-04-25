@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_AVAILABILITY_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_AVAILABILITY_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Rooms Availability" >
+		<message><![CDATA[VikBooking Rooms Availability]]></message>
+	</view>
+	<state>
+		<name>Rooms Availability</name>
+		<description>VikBooking Rooms Availability</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="room_ids" type="sql" default="0" label="COM_VIKBOOKING_ROOMIDS_FIELD_SELECT_TITLE" description="COM_VIKBOOKING_ROOMIDS_FIELD_SELECT_TITLE_DESC" query="SELECT id AS value, name AS title FROM #__vikbooking_rooms" key_field="value" value_field="title" multiple="multiple">
+				<option value="0">Show All</option> 
+			</field>
+			<field name="showtype" type="list" default="2" label="COM_VIKBOOKING_AVSHOWTYPE_FIELD_SELECT_TITLE">
+				<option value="1">COM_VIKBOOKING_AVSHOWTYPE_NONE</option>
+				<option value="2">COM_VIKBOOKING_AVSHOWTYPE_REMAINING</option>
+				<option value="3">COM_VIKBOOKING_AVSHOWTYPE_BOOKED</option>
+			</field>
+			<field name="sortby" type="list" default="" label="COM_VIKBOOKING_SORTBY_FIELD_SELECT_TITLE" description="">
+				<option value="">Adults/Guests Capacity</option>
+				<option value="name">Name</option>
+				<option value="id">ID</option>
+			</field>
+			<field name="sorttype" type="list" default="" label="COM_VIKBOOKING_SORTTYPE_FIELD_SELECT_TITLE" description="">
+				<option value="asc">ASC</option>
+				<option value="desc">DESC</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

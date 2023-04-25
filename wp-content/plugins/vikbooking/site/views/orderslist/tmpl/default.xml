@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_ORDERSLIST_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_ORDERSLIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Orders" >
+		<message><![CDATA[VikBooking Orders List]]></message>
+	</view>
+	<state>
+		<name>Orders</name>
+		<description>VikBooking Orders List</description>
+	</state>
+</metadata>
+

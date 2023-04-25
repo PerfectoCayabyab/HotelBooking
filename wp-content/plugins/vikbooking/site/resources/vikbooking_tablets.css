@@ -1,0 +1,58 @@
+.vbdivsearch {
+	width: auto;
+}
+.vbtabletdonesearch {
+	width: 40%;
+	padding:0 10px 0 0;
+}
+.vbimglistdiv {
+	width: 100% !important;
+}
+.vblistimg {
+	width: 100%;
+}
+.vbcontdivtot {
+	margin: 26px 0 0 0 !important;
+}
+.vbselectr {
+	padding: 13px 25px 12px 25px;
+}
+.vbcheckinroom, .vbcheckoutroom {
+	width: 97% !important;
+	float: none !important;
+	margin: 5px 0 0 0 !important;
+}
+.room_container {
+}
+.vbsearchheadroom {
+	margin:-10px 0 0 -10px !important;
+	float: none !important;
+	border-radius: 0 !important;
+	border-bottom-right-radius:15px !important;
+	-moz-border-bottom-right-radius:15px !important;
+	-webkit-border-bottom-right-radius:15px !important;
+}
+.vbsearchheadperson {
+	float: none !important;
+	margin:0 0 0 -10px !important;
+	border-radius: 0 !important;
+	border-bottom-right-radius:15px !important;
+	-moz-border-bottom-right-radius:15px !important;
+	-webkit-border-bottom-right-radius:15px !important;
+}
+.vikfx-thumbslide-thumbnails {
+	padding: 0 !important;
+}
+.vbentercoupon {
+	width: 100% !important;
+	float: none !important;
+}
+.vbcustomfields input {
+	color:#666 !important;
+}
+
+/* Fix jQuery UI Datepicker Responsiveness */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto !important;
+}
+/* end fix */

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_vikbooking">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.vbo.global" title="VBOACTION_GLOBAL" description="VBOACTION_GLOBAL_DESC" />
+		<action name="core.vbo.rateplans" title="VBOACTION_RATEPLANS" description="VBOACTION_RATEPLANS_DESC" />
+		<action name="core.vbo.rooms" title="VBOACTION_ROOMS" description="VBOACTION_ROOMS_DESC" />
+		<action name="core.vbo.pricing" title="VBOACTION_PRICING" description="VBOACTION_PRICING_DESC" />
+		<action name="core.vbo.bookings" title="VBOACTION_BOOKINGS" description="VBOACTION_BOOKINGS_DESC" />
+		<action name="core.vbo.availability" title="VBOACTION_AVAILABILITY" description="VBOACTION_AVAILABILITY_DESC" />
+		<action name="core.vbo.management" title="VBOACTION_MANAGEMENT" description="VBOACTION_MANAGEMENT_DESC" />
+		<action name="core.vbo.pms" title="VBOACTION_PMS" description="VBOACTION_PMS_DESC" />
+	</section>
+</access>

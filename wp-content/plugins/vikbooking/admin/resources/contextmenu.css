@@ -1,0 +1,126 @@
+/**
+ * Context menu
+ */
+
+.vik-context-menu {
+	position: absolute;
+	background: #f6f6f6;
+	opacity: 0.95;
+	display: block;
+	width: auto;
+	max-width: 400px;
+	min-width: 160px;
+	max-height: calc(100vh - 8px);
+	overflow-y: scroll;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(136,136,136,1);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(136,136,136,1);
+	box-shadow: 0px 0px 6px 1px rgba(136,136,136,1);
+	z-index: 2147483647;
+}
+.vik-context-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.vik-context-menu li {
+	padding: 0;
+	margin: 0;
+}
+.vik-context-menu li:first-child {
+	padding-top: 4px;
+}
+.vik-context-menu li:last-child {
+	padding-bottom: 4px;
+}
+.vik-context-menu li.separator:not(:last-child) {
+	border-bottom: 2px solid #e6e6e6;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+.vik-context-menu li a {
+	font-family: Helvetica;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #434355;
+	cursor: default;
+	padding: 6px 8px 6px 16px;
+	font-size: 14px;
+}
+.vik-context-menu li a:not(.disabled):hover {
+	color: #fff;
+	background: #218cf2;
+}
+.vik-context-menu li a.disabled {
+	opacity: 0.6;
+}
+.vik-context-menu li a.disabled:hover {
+	color: #434355;
+}
+.vik-context-menu li a .button-icon {
+	margin-right: 4px;
+	font-size: 16px;
+}
+.vik-context-menu li a .button-icon img {
+	max-width: 16px;
+	max-height: 16px;
+}
+.vik-context-menu li a .button-text {
+	flex: 1;
+}
+
+/**
+ * Dark Mode
+ */
+
+.vik-context-menu.dark-mode {
+	background: #1f1c1c;
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(100,100,100,1);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(100,100,100,1);
+	box-shadow: 0px 0px 6px 1px rgba(100,100,100,1);
+}
+.vik-context-menu.dark-mode li.separator:not(:last-child) {
+	border-bottom: 2px solid #3b3b3b;
+}
+.vik-context-menu.dark-mode li a,
+.vik-context-menu.dark-mode li a.disabled:hover {
+	color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+	.vik-context-menu:not(.light-mode) {
+		background: #1f1c1c;
+		-webkit-box-shadow: 0px 0px 6px 1px rgba(100,100,100,1);
+		-moz-box-shadow: 0px 0px 6px 1px rgba(100,100,100,1);
+		box-shadow: 0px 0px 6px 1px rgba(100,100,100,1);
+	}
+	.vik-context-menu:not(.light-mode) li.separator:not(:last-child) {
+		border-bottom: 2px solid #3b3b3b;
+	}
+	.vik-context-menu:not(.light-mode) li a,
+	.vik-context-menu:not(.light-mode) li a.disabled:hover {
+		color: #fff;
+	}
+}
+
+/**
+ * Utils
+ */
+
+/* hack used to disable the browser selection */
+.vik-context-menu-disable-selection {
+	cursor: pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+								  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* hack used to lock the document scroll */
+body.lock-scroll {
+	overflow: hidden;
+}

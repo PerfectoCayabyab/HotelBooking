@@ -1,0 +1,1032 @@
+/*
+ * Vik Booking - Colors adaptation for "Automatic Light/Dark" Appearance .
+ * Media queries should detect the OS/Browser preferences for the Dark Color Scheme
+ * and override the CSS variables within that preference.
+ * 
+ * @note 	the variables of this file should be identical to the ones of the file vcm-appearance-dark.css
+ */
+
+/* Variable declarations when a dark color scheme is preferred. */
+@media (prefers-color-scheme: dark) {
+	:root {
+
+		/* WordPress variables */
+		--wp-btn-color: #92c4ee;
+		--wp-btn-color-hover: #2e7aaf;
+	
+		/* body color */
+		--vbo-body-bg-color: #0f1216;
+		--vbo-main-bg-color: #0f1216;
+		--vbo-body-text-color: rgba(255, 255, 255, 0.87);
+		
+		/* main bg and text color */
+		--vbo-container-text-color:rgba(255, 255, 255, 0.87);
+		--vbo-contrast-text-color: rgba(255, 255, 255, 0.87);
+		--vbo-base-color: #4e8abb; /* #6096c2 */
+		--vbo-base-color-hover: #2c6fa5;
+		--vbo-link-text-color: #92c4ee;
+		--vbo-basic-btn: #181b22;
+		--vbo-basic-btn-hover: #303942;
+		--vbo-light-color-btn: #303942;
+		--vbo-middle-color-btn: #262f39;
+	
+		/* Config bg and text color */
+		--vbo-config-bg-color: #282b33;
+		--vbo-input-style: #282b33;
+		--vbo-config-text-color: inherit;
+		--vbo-config-border-color: #0f1216;
+		--vbo-config-titles-color-light: rgba(255, 255, 255, 0.77);
+		--vbo-config-child-bg-color: #181b22;
+		--vbo-config-text-color-light: rgba(255, 255, 255, 0.77);
+		--vbo-config-title-color: rgba(255, 255, 255, 0.60);
+	
+		/* Input Style */
+		--vbo-input-style: #1e222b;
+		--vbo-input-style-deactive: #282b33;
+		--vbo-input-style-nested-deactive: #181b22;
+	
+		/* Page Lists */
+		--vbo-toolbar-bg-color: rgba(212, 218, 229, 0.1);
+	
+		/* General Colors */
+		--vbo-red-color: #da5f5f;
+		--vbo-red-color-hover: #f38a8a;
+		--vbo-orange-color: #d09754;
+		--vbo-orange-color-hover: #be8340;
+		--vbo-green-color: #489e48;
+		--vbo-green-color-hover: #509e50;
+		--vbo-blue-color: #2f6f8e;
+		--vbo-blue-color-hover: #498fb3;
+	}
+	body {
+		background: var(--vbo-body-bg-color) !important;
+		color: var(--vbo-body-text-color) !important;
+	}
+	h2, h3 {
+		color: var(--vbo-config-text-color-light);
+	}
+	.label, .badge {
+		background-color: #666;
+	}
+	table.table th, table.table td {
+		background: var(--vbo-config-bg-color);
+		border-top: 1px solid var(--vbo-config-border-color);
+		border-bottom: 0;
+	}
+	.vbo-bookingslist-table thead, .vbo-list-table thead {
+		border-bottom: 0;
+	}
+	.vbo-bookingslist-table thead tr, .vbo-list-table thead tr {
+		border: 0;
+	}
+	.vbo-bookingslist-table.table > :not(:first-child), .vbo-list-table.table > :not(:first-child) {
+		border: 0;
+	}
+	.table tbody tr.warning > td, .table tr.no-results > td {
+		background-color: #5e5b4c !important;
+	}
+	.vbo-list-table tbody > tr > td, .vbo-list-table tbody > tr > th {
+		border-top: 1px solid var(--vbo-config-border-color) !important;
+	}
+
+	/* Config tabs */
+	.vbo-config-tabs-wrap dl.tabs {
+		border-bottom: 1px solid var(--vbo-light-color-btn);
+	}
+
+	/* Color action buttons */
+	.jtoolbar .page-title-action {
+		background: transparent;
+		color: var(--wp-btn-color);
+		border-color: var(--wp-btn-color);
+	}
+	.jtoolbar .page-title-action:hover {
+		background: transparent;
+		color: var(--wp-btn-color-hover);
+		border-color: var(--wp-btn-color-hover);
+	}
+	.fancybox-wrap .fancybox-skin {
+		background: var(--vbo-body-bg-color);
+	}
+	/* @WP style */
+	/* Plugin name */
+	.wrap h1.wp-heading-inline {
+		color: var(--vbo-body-text-color)
+	}
+	/* Arrow active WP menu on the left */
+	ul#adminmenu a.wp-has-current-submenu::after, ul#adminmenu > li.current > a.current::after {
+		border-right-color: var(--vbo-body-bg-color);
+	}
+	.wp-core-ui select {
+		background: var(--vbo-input-style) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23474c5b%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55%;
+		color: inherit;
+		border-color: var(--vbo-config-border-color);
+	}
+	.wp-core-ui .button, .wp-core-ui .button-secondary, .vbo-guestactivitywidget-commands .vbo-guestactivitywidget-command-chevron > span, .vbo-reportwidget-command-chevron > span, .vbo-dash-chart-title .vbo-dash-chart-nav {
+		background: var(--vbo-basic-btn) !important;
+		color: var(--vbo-config-title-color) !important;
+		border-color: var(--vbo-config-border-color);
+	}
+	.wp-core-ui .button-disabled, .wp-core-ui .button-secondary.disabled, .wp-core-ui .button-secondary:disabled, .wp-core-ui .button-secondary[disabled], .wp-core-ui .button.disabled, .wp-core-ui .button:disabled, .wp-core-ui .button[disabled] {
+		border: 1px solid var(--vbo-light-color-btn) !important;
+		background: var(--vbo-config-bg-color) !important;
+		border-color: var(--vbo-contrast-text-color);
+	}
+	.wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover, .vbo-guestactivitywidget-commands .vbo-guestactivitywidget-command-chevron > span:hover, .vbo-reportwidget-command-chevron > span:hover, .vbo-dash-chart-title .vbo-dash-chart-nav:hover {
+		border-color: var(--wp-btn-color);
+		color: var(--wp-btn-color);
+	}
+	.wp-core-ui select.disabled, .wp-core-ui select:disabled {
+		background-color: var(--vbo-input-style-deactive);
+		color: var(--vbo-config-text-color-light);
+	}
+	.wp-core-ui select.disabled, .wp-core-ui select:disabled, input.disabled, input:disabled, select.disabled, select:disabled, textarea.disabled, textarea:disabled {
+		background: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.wp-editor-wrap .wp-editor-container, .wp-editor-wrap .quicktags-toolbar {
+		border-color: var(--vbo-config-border-color);
+	}
+	.wp-editor-wrap .quicktags-toolbar {
+		background: var(--vbo-middle-color-btn);
+	}
+	.mce-tinymce div.mce-panel {
+		background: var(--vbo-input-style);
+	}
+	.mce-tinymce div.mce-toolbar-grp {
+		border-bottom: 1px solid var(--vbo-config-border-color);
+		background: var(--vbo-middle-color-btn);
+	}
+	.wp-editor-wrap .wp-editor-tabs .wp-switch-editor {
+		background: var(--vbo-input-style);
+		border-color: var(--vbo-config-border-color);
+		color: inherit;
+	}
+	.wp-editor-wrap.html-active .switch-html, .wp-editor-wrap.tmce-active .switch-tmce {
+		background: var(--vbo-middle-color-btn);
+		border-color: var(--vbo-config-border-color);
+		border-bottom-color: var(--vbo-middle-color-btn);
+		color: inherit;
+	}
+	.mce-tinymce .mce-btn button, .mce-tinymce .mce-toolbar .mce-ico {
+		color: var(--vbo-config-title-color);
+	}
+	.mce-tinymce .mce-toolbar .mce-btn-group .mce-btn.mce-listbox {
+		background: var(--vbo-input-style-nested-deactive);
+		border-color: var(--vbo-config-border-color);
+		color: inherit;
+	}
+	.mce-tinymce .mce-toolbar .mce-btn-group .mce-btn.mce-listbox:hover, .mce-tinymce .mce-toolbar .mce-btn-group .mce-btn.mce-listbox:focus {
+		background: var(--vbo-input-style);
+		border-color: var(--vbo-config-border-color);
+		color: inherit;
+	}
+	.mce-tinymce .mce-panel .mce-btn i.mce-caret {
+		border-top-color: inherit;
+	}
+	.mce-tinymce .mce-panel .mce-btn:focus i.mce-caret, .mce-tinymce .mce-panel .mce-btn:hover i.mce-caret {
+		border-top-color: var(--vbo-contrast-text-color);
+	}
+	.mce-tinymce .mce-panel .mce-active i.mce-caret {
+		border-bottom-color: var(--vbo-contrast-text-color);
+	}
+	.mce-panel.mce-menu {
+		border-color: var(--vbo-config-border-color) !important;
+		background: var(--vbo-input-style);
+	}
+	.mce-menu .mce-menu-item.mce-active.mce-menu-item-normal, .mce-menu .mce-menu-item.mce-active.mce-menu-item-preview, .mce-menu .mce-menu-item.mce-selected, .mce-menu .mce-menu-item:focus, .mce-menu .mce-menu-item:hover {
+		background: var(--vbo-base-color);
+	}
+	.mce-tinymce .mce-toolbar .mce-btn-group .mce-btn:focus, .mce-tinymce .mce-toolbar .mce-btn-group .mce-btn:hover, .qt-dfw:focus, .qt-dfw:hover {
+		background: var(--vbo-input-style);
+		border-color: var(--vbo-input-style);
+		color: var(--vbo-base-color);
+		box-shadow: none;
+	}
+	.mce-tinymce .mce-toolbar .mce-btn-group .mce-btn.mce-active, .mce-tinymce .mce-toolbar .mce-btn-group .mce-btn:active, .qt-dfw.active {
+		background: var(--vbo-input-style);
+		border-color: var(--vbo-config-border-color);
+		color: var(--vbo-base-color);
+	}
+	.vik-contentbuilder-editor-container .ql-editor h1 {
+		color: inherit;
+		font-weight: bold;
+	}
+	.vik-contentbuilder-editor-container .vbo-editor-hl-specialtag {
+		background-color: rgba(59, 193, 255, 0.3);
+	}
+	/* @WP End */
+	.popover, .popover-title {
+		color: var(--vbo-body-text-color);
+	}
+	.popover.right .arrow::after {
+		border-right-color: var(--vbo-light-color-btn) !important;
+	}
+	input.readonly, input[readonly], textarea.readonly, textarea[readonly], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
+		background-color: var(--vbo-input-style) !important;
+		border-color: var(--vbo-config-border-color) !important;
+		color: var(--vbo-container-text-color) !important;
+	}
+	input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus {
+		background: var(--vbo-config-child-bg-color);
+	}
+	.comment-ays, .feature-filter, .imgedit-group, .popular-tags, .stuffbox, .widgets-holder-wrap, .wp-editor-container, p.popular-tags, table.widefat {
+		background: var(--vbo-config-bg-color);
+	}
+	.widefat tfoot tr td, .widefat tfoot tr th, .widefat thead tr td, .widefat thead tr th {
+		color: var(--vbo-config-text-color-light);
+	}
+	.widefat td, .widefat th {
+		color: inherit;
+	}
+	/*.select2-container--default .select2-selection--multiple {
+		background-color: var(--vbo-input-style) !important;
+	}*/
+	.select2-container .select2-choice {
+		background: var(--vbo-input-style) !important;
+		border: 1px solid var(--vbo-config-border-color) !important;
+		color: var(--vbo-body-text-color) !important;
+	}
+	.select2-container .select2-choice .select2-arrow {
+		background-image: none !important;
+		background: #272c37 !important;
+		border-left: 1px solid #333 !important;
+	}
+	.notice, div.error, div.updated {
+		background: var(--vbo-config-bg-color);
+		border-top: 1px solid var(--vbo-light-color-btn);
+		border-right: 1px solid var(--vbo-light-color-btn);
+		border-bottom: 1px solid var(--vbo-light-color-btn);
+	}
+	body a {
+		color: var(--vbo-link-text-color);
+	}
+	body a:hover {
+		color: var(--vbo-base-color-hover);
+	}
+	body code, body pre {
+		background: var(--vbo-config-bg-color);
+		color: inherit;
+	}
+	/* Error Messages */
+	.warn {
+		border: 1px solid rgba(249, 233, 169, 0.5) !important;
+		background-color: rgba(249, 233, 169, 0.2) !important;	
+	}
+	.info {
+		border: 1px solid rgba(142, 227, 255, 0.6) !important;
+		background-color: rgba(223, 247, 255, 0.3) !important;
+	}
+	.err {
+		border: 1px solid rgb(216, 0, 12, .3) !important;
+		background-color: rgba(255, 216, 216, 0.2) !important;
+	}
+	.bluedays {
+		background: var(--vbo-light-color-btn) !important;
+	}
+	.bluedays.vbo-tablewday-wend {
+		background: var(--vbo-middle-color-btn) !important;
+	}
+	.block-picked-start, .block-picked-middle, .block-picked-end {
+		background: rgba(255, 196, 153, 0.5);
+	}
+	.ui-widget-content a {
+		color: inherit;
+	}
+	
+	.popover {
+		background: var(--vbo-light-color-btn) !important;
+	}
+	.popover.right > .bs-arrow::after {
+		border-right-color: var(--vbo-light-color-btn) !important;
+	}
+	.popover.left > .bs-arrow::after {
+		border-left-color: var(--vbo-light-color-btn) !important;
+	}
+	.popover.bottom > .bs-arrow::after {
+		border-bottom-color: var(--vbo-light-color-btn) !important;
+	}
+	.popover.top > .bs-arrow::after {
+		border-top-color: var(--vbo-light-color-btn) !important;
+	}
+	.popover-title {
+		background-color: var(--vbo-config-child-bg-color) !important;
+		border-bottom: 1px solid var(--vbo-config-child-bg-color) !important;
+	}
+	code, kbd {
+		background: var(--vbo-config-bg-color);
+	}
+	
+	/* vbo */
+	.vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list > li {
+		background: #a9d4ee;
+	}
+	.vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list > li:hover, .vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list .vbo-sticky-note-add {
+		background: #c4dbea;
+	}
+	.vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list .vbo-sticky-note-add {
+		border: 2px solid #a9d4ee;
+	}
+	.vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list .vbo-sticky-note-add:hover, .vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list .vbo-sticky-note-add .vbo-sticky-note-add-inner:hover {
+		background: #a9d4ee;
+	}
+	.vbo-admin-widget-sticky-notes-wrap .vbo-admin-widget-sticky-notes-list .vbo-sticky-note a {
+		color: #056dc3;
+	}
+	.vbo-skeleton-loading {
+		background: var(--vbo-basic-btn);
+	}
+	.vbo-skeleton-loading:after {
+		background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
+	}
+	.vbo-dashboard-chart-container {
+		box-shadow: 0 0 20px rgba(0,0,0,.2);
+	}
+	.vbo-admin-widgets-list-customize .vbo-admin-widgets-section, .vbo-widgets-welcome-demo .vbo-widgets-welcome-demo-section {
+		background: #55626f;
+	}
+	.vbo-admin-widgets-list-customize .vbo-admin-widgets-section .vbo-admin-widgets-container, .vbo-widgets-welcome-demo .vbo-widgets-welcome-demo-container {
+		background: #6a848e;
+	}
+	.vbo-admin-widgets-list-customize .vbo-admin-widgets-section .vbo-admin-widgets-container.vbo-admin-widgets-container-addnew:hover,
+	.vbo-admin-widgets-widget-addnew .vbo-admin-widgets-plus-box:hover, .vbo-admin-widgets-section.vbo-admin-widgets-section-addnew .vbo-admin-widgets-plus-box:hover, .vbo-admin-widgets-container-addnew .vbo-admin-widgets-plus-box:hover {
+		background: #2c6880;
+	}
+	.vbo-admin-widgets-list-customize .vbo-admin-widgets-section .vbo-admin-widgets-container.vbo-admin-widgets-container-addnew .vbo-admin-widgets-plus-box, .vbo-admin-widgets-section.vbo-admin-widgets-section-addnew {
+		color: var(--vbo-config-text-color-light);
+	}
+	.vbo-admin-widgets-list-customize .vbo-admin-widget-elem-cmds, .vbo-admin-widgets-list-customize .vbo-admin-widgets-widget-remove {
+		color: #eee;
+	}
+	.vbo-widgets-welcome-demo .vbo-widgets-welcome-demo-widget {
+		background: var(--vbo-config-bg-color);
+	}
+	.vbo-tinymce-modal {
+		background-color: var(--vbo-config-bg-color);
+	}
+	.vbo-tinymce-modal form h1 {
+		background: var(--vbo-config-child-bg-color);
+		border-color: var(--vbo-config-border-color);
+		color: inherit;
+	}
+	.vbo-tinymce-modal .shortcodes-group {
+		border-color: var(--vbo-config-border-color);
+	}
+	.vbo-tinymce-modal .shortcode-record {
+		background-color: var(--vbo-toolbar-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.vbo-tinymce-modal .shortcode-record.selected {
+		background-color: var(--vbo-light-color-btn);
+	}
+	.vbo-tinymce-modal .vbo-tinymce-submitbox {
+		border-color: var(--vbo-config-border-color);
+		background: var(--vbo-config-child-bg-color);
+	}
+	.vbo-tinymce-modal .vbo-tinymce-submitbox #vbo-tinymce-cancel button {
+		background-color: var(--vbo-basic-btn) !important;
+		border-color: var(--vbo-config-border-color);
+	}
+	.vbo-tinymce-modal .vbo-tinymce-submitbox #vbo-tinymce-cancel button:hover {
+		background-color: var(--vbo-basic-btn-hover) !important;
+	}
+	.vbo-tinymce-modal .vbo-tinymce-submitbox #vbo-tinymce-update button {
+		background-color: var(--vbo-green-color) !important;
+		border-color: var(--vbo-green-color);
+		color: inherit inherit;
+	}
+	.vbo-tinymce-modal .vbo-tinymce-submitbox #vbo-tinymce-update button:hover {
+		background-color: var(--vbo-green-color-hover) !important;
+	}
+	.vbo-inspector-wrap {
+		background-color: rgba(255, 255, 255, 0.94);;
+	}
+	.vbo-roverview-datecmd-top .vbo-roverview-datecmd-date {
+		background: var(--vbo-input-style);
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.vbo-roverviewrowone .vbo-roverv-festcell, .notbusy.vbo-overv-festcell, .subnotbusy.vbo-overv-festcell, .bluedays.vbo-overv-festcell, .vbo-tableaux-festcell {
+		background-color: #5d4a5a !important;
+	}
+	.vbo-roverviewrowone .vbo-roverv-festcell:hover {
+		background-color: #80667c !important;
+	}
+	.vbo-roverviewrowone .vbo-roverv-festcell:active {
+		background-color: #513d4e !important;
+	}
+	.notbusy.vbo-overv-todaycell, .subnotbusy.vbo-overv-todaycell, .bluedays.vbo-overv-todaycell, .vbo-tableaux-table .vbo-tableaux-todaycell {
+		background-color: #6889ab !important;
+	}
+	.vboverviewtablerow .vbo-partially, .vbo-overview-legend-yellow .vbo-overview-legend-box {
+		background: none repeat scroll 0 0 #c2770d !important;
+	}
+	.bluedays.vbo-roverw-tablewday-wend {
+		background: var(--vbo-middle-color-btn) !important;
+	}
+	.vbo-calcrates-rateblock {
+		background-color: var(--vbo-input-style);
+	}
+	.vbo-avcalendars-wrapper .vbo-calendar-cal-container .vbadmincaltable {
+		background-color: var(--vbo-light-color-btn);
+	}
+	.vbo-overview-tip-bookingcont-left {
+		background-color: rgba(60, 62, 67);
+	}
+	.vbo-overview-tip-bookingcont-right {
+		background-color: rgba(90, 90, 90);
+	}
+	.vbo-overview-tip-bookingcont .vbo-overview-tip-lbl {
+		color: rgb(190, 216, 235);
+	}
+	.vbo-overview-tip-bctag-subtip {
+		background-color: rgb(92, 92, 92);
+	}
+	.vbo-overview-tip-bctag-subtip:before {
+		border-color: transparent rgb(92, 92, 92) transparent transparent;
+	}
+	.vbo-bookingdet-command .btn.vbo-config-btn {
+		border: 1px solid #434650;
+	}
+	.vbo-dropfiles-target {
+		color: var(--vbo-config-text-color-light) !important;
+		background-color: var(--vbo-config-child-bg-color) !important;
+		border-color: var(--vbo-config-border-color);
+	}
+	.btn.vbo-condtext-specialtag-btn {
+		background-color: #181b1d;
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.viwpro-procnt .vikwppro-licencecnt {
+		background: #204255;
+	}
+	.viwpro-procnt .viwpro-procnt-inner {
+		border: 2px solid #54708e;
+	}
+	.vikwppro-licenceform:after {
+		border-color: transparent transparent transparent #204255;
+	}
+	.vbo-insertrates-cont > div {
+		background-color: var(--vbo-basic-btn-hover);
+	}
+	.vikpro-e4jc-badgeimg img {
+		background: #101010;
+		padding: 4px;
+		border-radius: 4px;
+	}
+	.viwpro-e4jc-channels .viwpro-e4jc-channels-inner {
+		background: #101010;
+		margin: 20px;
+		border-radius: 4px;
+	}
+	.vikwppro-download-progress progress[value]::-moz-progress-bar, .vikwppro-download-progress progress[value]::-webkit-progress-bar {
+		background: #265f8c;
+	}
+	.vbo-overview-tiploading {
+		background-color: rgba(58,58,58, .9);
+	}
+	.vbo-room-channels-mapped-wrap .vbo-room-channels-mapped-ch {
+		background: rgba(0,0,0,.4);
+	}
+	#progress.progress {
+		background: var(--vbo-config-child-bg-color);
+		background-image: none;
+	}
+	.vbo-custsearchres-entry-highligthed {
+		background: var(--vbo-config-child-bg-color);
+	}
+	.vbo-translations-lim-wrap table select {
+		background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23474c5b' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .55rem center;
+		background-color: var(--vbo-input-style) !important;
+		background-size: 8px 10px;
+	}
+	.vbo-roverw-daymod-infospids-outcont {
+		background: var(--vbo-main-bg-color) none repeat scroll 0 0;
+	}
+	.vbo-ratesoverview-period-box-cals-inner {
+		background: var(--vbo-basic-btn);
+	}
+	.vbo-timeline-radio:checked + .vbo-timeline-relative .vbo-timeline-circle {
+		background: #fff;
+	}
+	/* VikBooking Chat */
+	.chat-border-layout .chat-threads-panel {
+		border-color: var(--vbo-basic-btn) !important;
+	}
+	.chat-threads-list li {
+		border-color: var(--vbo-config-border-color) !important;
+		background: var(--vbo-config-bg-color) !important;
+	}
+	.chat-threads-list li.active {
+		background-color: #3c404c !important;
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.chat-threads-list li:not(.active):hover {
+		background-color: #2e323d !important;
+	}
+	.chat-input-footer .textarea-input label.attachment-label {
+		color: var(--vbo-config-title-color) !important;
+	}
+	.chat-conversation .chat-message .speech-bubble.received {
+		background: #3c404c !important;
+		color: #fff !important;
+	}
+	.chat-conversation .chat-message .speech-bubble.sent {
+		background: #50575d !important;
+	}
+	.chat-input-footer .chat-uploads-bar .chat-attachment {
+		background-color: var(--vbo-light-color-btn) !important;
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	/* VikBooking Telephone */
+	.iti__country-list {
+		background: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.iti__country.iti__highlight {
+		background-color: var(--vbo-light-color-btn);
+	}
+	/* Content Builder */
+	.ql-toolbar.ql-snow + .ql-container.ql-snow  {
+		background: var(--vbo-middle-color-btn);
+	}
+	
+	/* @Joomla */
+	body.admin #status {
+		background: var(--vbo-config-bg-color);
+		color: var(--vbo-config-title-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	body .btn {
+		background: var(--vbo-basic-btn);
+		border: 1px solid var(--vbo-config-border-color);
+		color: var(--vbo-body-text-color);
+	}
+	body .btn:hover {
+		background-color: var(--vbo-basic-btn-hover);
+		color: var(--vbo-body-text-color);
+	}
+	body .btn-success {
+		background: var(--vbo-green-color);
+		border: 1px solid var(--vbo-green-color);
+	}
+	body .btn-success:hover {
+		background: var(--vbo-green-color-hover);
+		border: 1px solid var(--vbo-green-color-hover);
+	}
+	body.admin #content .btn:hover, body.admin #content .btn:focus {
+		background: var(--vbo-basic-btn-hover);
+		border: 1px solid var(--vbo-config-bg-color);
+		color: var(--vbo-body-text-color);
+	}
+	body.admin .pagination ul > li > a, .pagination ul > li > span {
+		background: var(--vbo-basic-btn) !important;
+		color: var(--vbo-config-title-color) !important;
+		border-color: var(--vbo-config-border-color);
+	}
+	body.admin .pagination ul > li.disabled > a, body.admin .pagination ul > li.disabled > span {
+		border: 1px solid var(--vbo-light-color-btn) !important;
+		background: var(--vbo-config-bg-color) !important;
+		border-color: var(--vbo-contrast-text-color);
+	}
+	body.admin .pagination ul > li.active > span, body.admin .pagination ul > li > a:hover, .pagination ul > li > span:hover {
+		border-color: var(--vbo-config-border-color);
+		background: var(--vbo-config-border-color) !important;
+	}
+	body.admin .calendar-container {
+		background: var(--vbo-config-bg-color) !important;
+	}
+	body.admin .calendar-container table tbody td.day.wn {
+		background: var(--vbo-config-bg-color);
+	}
+	body.admin .calendar-container table tbody td.disabled {
+		background: var(--vbo-input-style-deactive);
+	}
+	body.admin .input-append .add-on, .input-prepend .add-on {
+		background: var(--vbo-basic-btn);
+		border-color: var(--vbo-config-border-color);
+	}
+	body.admin .subhead {
+		background: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+		color: inherit;
+	}
+	/*
+	body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) [class^="icon-"], body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) [class*=" icon-"] {
+		background: var(--vbo-basic-btn);
+		border-right: 1px solid var(--vbo-config-bg-color);
+	}
+	*/
+	body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) .btn:hover, body.admin #toolbar div:not(#toolbar-new, #toolbar-apply) .btn:focus {
+		background: var(--vbo-basic-btn-hover);
+		border: 1px solid var(--vbo-config-bg-color) !important;
+	}
+	body.admin #toolbar .btn-success {
+		background: var(--vbo-green-color);
+	}
+	body.admin #toolbar .dropdown-toggle-split {
+		border-color: var(--vbo-config-border-color);
+	}
+	body.admin #toolbar .dropdown-toggle-split .icon-chevron-down {
+		background: transparent !important;
+		border: 0 !important;
+		color: #fff;
+	}
+	body.admin #toolbar .btn-group .dropdown-menu {
+		background: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	body.admin #toolbar .btn-group .dropdown-menu:hover {
+		background: var(--vbo-basic-btn-hover);
+		border: 1px solid var(--vbo-config-bg-color);
+	}
+	body.admin #toolbar .btn-group .dropdown-menu .dropdown-item > span {
+		background: transparent !important;
+		border: 0 !important;
+	}
+	.table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
+		color: var(--vbo-body-text-color);
+	}
+	body.admin .modal-header {
+		background: var(--vbo-body-bg-color);
+		border-bottom: 1px solid var(--vbo-config-bg-color) !important;
+	}
+	body.admin .modal-header .close {
+		color: #fff;
+	}
+	body.admin .label, .badge {
+		background-color: #666;
+	}
+	body.admin .label-info, .label-info, .badge-info {
+		background: #2c5f78 !important;
+		color: #fff;
+	}
+	body.admin .label-info:hover, .label-info:hover, .badge-info:hover {
+		color: #fff;
+	}
+	body.admin a.label-info:hover, a.label-info:hover, a.badge-info:hover {
+		background: var(--vbo-blue-color) !important;
+	}
+	body.admin .label-success, .label-success, .badge-success {
+		background-color: var(--vbo-green-color) !important;
+	}
+	body.admin .label-danger, .label-danger, .badge-danger, body.admin .label-error, .label-error, .badge-error {
+		background-color: var(--vbo-red-color) !important;
+	}
+	body.admin .label-warning, .label-warning, .badge-warning {
+		background-color: var(--vbo-orange-color) !important;
+	}
+	.js-editor-tinymce .mce-panel {
+		background-color: var(--vbo-config-child-bg-color);
+	}
+	.js-editor-tinymce .mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset {
+		color: var(--vbo-config-title-color) !important;
+	}
+	.js-editor-tinymce .mce-menubar .mce-menubtn button, .mce-menubar .mce-menubtn button span {
+		color: var(--vbo-config-title-color) !important;
+	}
+	.js-editor-tinymce .mce-menubar .mce-caret {
+		border-top-color: var(--vbo-config-title-color) !important;
+	}
+	.js-editor-tinymce .mce-btn {
+		background: var(--vbo-input-style-nested-deactive) !important;
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.js-editor-tinymce .mce-menubtn button {
+		color: var(--vbo-config-title-color) !important;
+	}
+	.js-editor-tinymce .mce-menubtn button:hover, .js-editor-tinymce .mce-container button:hover span, .js-editor-tinymce .mce-container button:hover i {
+		color: var(--vbo-base-color) !important;
+	}
+	.js-editor-tinymce .mce-container .mce-active button span, .js-editor-tinymce .mce-container .mce-active button i {
+		color: var(--vbo-base-color) !important;
+	}
+	.js-editor-tinymce .mce-menubar {
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.mce-container .mce-menu-item.mce-disabled:hover {
+		background: var(--vbo-basic-btn-hover) !important;
+	}
+	.js-editor-tinymce  .mce-btn-group:not(:first-child) {
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.mce-container.mce-window {
+		background-color: var(--vbo-config-bg-color);
+	}
+	.mce-container.mce-window .mce-foot {
+		background-color: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-container.mce-window .mce-foot .mce-btn {
+		background: var(--vbo-basic-btn);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-container.mce-window .mce-foot .mce-btn:hover {
+		background: var(--vbo-input-style-deactive);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-container.mce-window .mce-abs-layout-item input, .mce-container.mce-window .mce-abs-layout-item .mce-btn {
+		background-color: var(--vbo-input-style);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-container.mce-window .mce-abs-layout-item .mce-btn .mce-caret {
+		border-top: 4px solid var(--vbo-config-title-color);
+	}
+	.mce-container.mce-window .mce-window-head {
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-window-body .mce-panel {
+		background-color: var(--vbo-input-style-deactive);
+	}
+	.mce-window-body .mce-panel .mce-tabs, .mce-window-body .mce-panel .mce-tabs + .mce-container-body {
+		background-color: var(--vbo-config-bg-color);
+		border-bottom: 1px solid var(--vbo-config-border-color);
+	}
+	.mce-window-body .mce-panel .mce-tab {
+		background-color: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-window-body .mce-label, .mce-window-body .mce-panel .mce-tab {
+		text-shadow: none;
+	}
+	.mce-window-body .mce-abs-layout-item i.mce-i-checkbox {
+		background-color: var(--vbo-input-style);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-window-body .mce-charmap td:hover {
+		background-color: var(--vbo-basic-btn);
+	}
+	.mce-tinymce-inline.mce-panel {
+		background: var(--vbo-middle-color-btn);
+	}
+	.mce-tinymce-inline.mce-panel .mce-btn {
+		background-color: var(--vbo-input-style);
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-tinymce-inline.mce-arrow.mce-arrow-down:after {
+		border-top-color: var(--vbo-middle-color-btn);
+	}
+	.mce-container-body .mce-splitbtn .mce-open.mce-active {
+		background-color: var(--vbo-input-style-deactive);
+		outline: 1px solid var(--vbo-config-border-color);
+	}
+	.mce-container.mce-floatpanel.mce-popover {
+		background-color: var(--vbo-config-bg-color);
+	}
+	.mce-container.mce-floatpanel.mce-popover .mce-grid td.mce-grid-cell div {
+		border-color: var(--vbo-config-border-color);
+	}
+	.mce-container.mce-floatpanel.mce-popover .mce-btn-flat:hover, .mce-container.mce-floatpanel.mce-popover .mce-btn-flat.mce-active, .mce-btn-flat:focus, .mce-container.mce-floatpanel.mce-popover .mce-btn-flat:active {
+		background-color: var(--vbo-basic-btn);
+	}
+	.mce-floatpanel.mce-popover.mce-bottom.mce-popover > .mce-arrow::after {
+		border-bottom-color: var(--vbo-config-bg-color);
+	}
+	.mce-notification *, .mce-notification .mce-progress .mce-text {
+		color: #333333 !important;
+	}
+	.js-calendar .table th, .js-calendar .table td {
+		border-color: var(--vbo-config-border-color);
+	}
+	.modal .modal-header {
+		border-bottom: 1px solid var(--vbo-light-color-btn);
+	}
+	.modal .modal-header .box-close {
+		border-left: 1px solid var(--vbo-light-color-btn);
+	}
+	.pagination.pagination-toolbar ul {
+		border: 1px solid var(--vbo-basic-btn);
+	}
+	#status.navbar-fixed-bottom .btn-toolbar a {
+		color: var(--vbo-config-titles-color-light);
+	}
+	#status.navbar-fixed-bottom .btn-toolbar a:hover {
+		color: var(--vbo-base-color);
+	}
+
+	/* Main Menu */
+	.vbo-submenu-wrap li > div .vbo-submenu-item-helper-link .vbo-submenu-item-helper-avatar img {
+		border: 1px solid var(--vbo-body-bg-color);
+	}
+	
+	/* Dropdown Context Menu */
+	.vik-context-menu.vbo-dropdown-cxmenu {
+		background: var(--vbo-main-bg-color);
+	}
+	
+	/* Joomla4 */
+	body.admin.layout-default #jmodal-vbo-notification-details button.btn-close {
+		position: relative;
+		background: var(--vbo-config-bg-color);
+	}
+	body.admin.layout-default #jmodal-vbo-notification-details button.btn-close:after {
+		font-family: "Font Awesome 5 Free", FontAwesomes !important;
+		content: "\f00d";
+		font-weight: 900;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	body.admin.layout-default label {
+		color: var(--vbo-body-text-color);
+	}
+	body.admin.layout-default .h1, body.admin.layout-default .h2, body.admin.layout-default .h3, body.admin.layout-default .h4, body.admin.layout-default .h5, body.admin.layout-default .h6, body.admin.layout-default h1, body.admin.layout-default h2, body.admin.layout-default h3, body.admin.layout-default h4, body.admin.layout-default h5, body.admin.layout-default h6 {
+		color: var(--vbo-config-title-color);
+	}
+	body.admin.layout-default joomla-field-media .field-media-preview {
+		background: var(--vbo-input-style);
+	}
+	body.admin.layout-default .popover-header {
+		background-color: var(--vbo-config-child-bg-color) !important;
+		border-bottom: 1px solid var(--vbo-config-child-bg-color) !important;
+	}
+	body.admin.layout-default .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after, body.admin.layout-default .bs-popover-top > .popover-arrow::after {
+		border-top-color: var(--vbo-light-color-btn) !important;
+	}
+	body.admin.layout-default .bs-popover-auto[data-popper-placement^="right"] > .popover-arrow::after, body.admin.layout-default .bs-popover-end > .popover-arrow::after {
+		border-right-color: var(--vbo-light-color-btn) !important;
+	}
+	body.admin.layout-default .bs-popover-auto[data-popper-placement^="left"] > .popover-arrow::after {
+		border-left-color: var(--vbo-light-color-btn) !important;
+	}
+	body.admin.layout-default .subhead #toolbar joomla-toolbar-button .btn {
+		background: var(--vbo-input-style);
+		color: inherit;
+		border-color: var(--vbo-config-border-color);
+	}
+	body.admin.layout-default .subhead #toolbar joomla-toolbar-button .btn .fa-ellipsis-h {
+		color: var(--vbo-config-title-color);
+	}
+	.vbo-admin-container .vbo-param-container .vbo-param-setting select, .new_depovr_container select, .vbo-calendar-custmail-tpls-wrap select, .vbo-bookingdet-topcontainer select, .vbo-roomdet-guest-detail select, .vbo-btn-toolbar select, .occupancy-adults-ovr select, .vbo-reportwidget-filters select, form select:not([multiple]) {
+		background: var(--vbo-input-style) url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23474c5b%22%2F%3E%3C%2Fsvg%3E') no-repeat right 5px top 55% !important;
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.vbo-reportwidget-filters {
+		box-shadow: 0 4px 14px rgba(0,0,0,.6);
+	}
+	.js-editor-tinymce .tox-tinymce {
+		border-color: var(--vbo-config-border-color);
+	}
+	.js-editor-tinymce .tox .tox-menubar {
+		border-bottom: 1px solid var(--vbo-config-border-color);
+		background: var(--vbo-middle-color-btn);
+		color: var(--vbo-container-text-color);
+	}
+	.js-editor-tinymce .tox .tox-mbtn > span, .js-editor-tinymce .tox .tox-tbtn > span {
+		color: var(--vbo-body-text-color);
+	}
+	.js-editor-tinymce .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active), .js-editor-tinymce .tox .tox-tbtn:hover {
+		background: var(--vbo-input-style-nested-deactive);
+		border-color: var(--vbo-input-style-nested-deactive);
+	}
+	.js-editor-tinymce .tox .tox-mbtn--active, .js-editor-tinymce .tox .tox-mbtn:focus, .js-editor-tinymce .tox .tox-mbtn:focus:not(:disabled), .js-editor-tinymce .tox .tox-tbtn:focus, .js-editor-tinymce .tox .tox-tbtn--enabled, .js-editor-tinymce .tox .tox-tbtn--enabled:hover {
+		background: var(--vbo-input-style-nested-deactive);
+		border-color: var(--vbo-input-style-nested-deactive);
+	}
+	.tox.tox-tinymce-aux .tox-menu {
+		border-color: var(--vbo-config-border-color) !important;
+		background: var(--vbo-input-style);
+	}
+	.tox.tox-tinymce-aux .tox-collection__item, .tox.tox-tinymce-aux .tox-collection__item-accessory {
+		color: var(--vbo-body-text-color);
+	}
+	.tox.tox-tinymce-aux .tox-collection__item--state-disabled, .tox.tox-tinymce-aux .tox-collection__item--state-disabled .tox-collection__item-accessory {
+		color: var(--vbo-config-title-color);
+	}
+	.tox.tox-tinymce-aux .tox-collection--list .tox-collection__group {
+		border-top: 1px solid var(--vbo-config-border-color) !important;
+	}
+	.tox.tox-tinymce-aux .tox-collection--list .tox-collection__item--active, .tox.tox-tinymce-aux .tox-collection--list .tox-collection__item--enabled, .js-editor-tinymce .tox .tox-tbtn:active {
+		background: var(--vbo-input-style-nested-deactive);
+	}
+	.tox.tox-tinymce-aux .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+		color: var(--vbo-config-title-covlor);
+	}
+	.tox.tox-tinymce-aux .tox-collection--list .tox-collection__item--enabled {
+		color: var(--vbo-config-title-color);
+	}
+	.tox.tox-tinymce-aux :not(svg):not(rect) {
+		color: var(--vbo-config-title-color) !important;
+	}
+	.tox.tox-tinymce-aux .tox-collection__item-caret svg, .js-editor-tinymce .tox .tox-toolbar-overlord svg, .js-editor-tinymce .tox-tbtn:hover svg {
+		fill: var(--vbo-config-title-color) !important;
+	}
+	.tox.tox-tinymce-aux .tox-dialog {
+		border-color: var(--vbo-config-border-color);
+		background-color: var(--vbo-config-bg-color);
+	}
+	.tox.tox-tinymce-aux .tox-dialog__footer, .tox.tox-tinymce-aux .tox-dialog__header {
+		background-color: var(--vbo-config-bg-color);
+	}
+	.tox.tox-tinymce-aux .tox-dialog__footer {
+		border-color: var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-tbtn svg {
+		fill: var(--vbo-base-color);
+	}
+	.tox.tox-tinymce-aux .tox-dialog__footer .tox-tbtn--select {
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-button--secondary[disabled], .tox.tox-tinymce-aux .tox-button--naked[disabled] {
+		background-color: var(--vbo-input-style-deactive);
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-button--secondary:hover:not(:disabled) {
+		background-color: var(--vbo-input-style-nested-deactive);
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-dialog__footer .tox-button {
+		color: #fff !important;
+	}
+	.js-editor-tinymce .tox-editor-header .tox-toolbar, .js-editor-tinymce .tox-editor-header .tox-toolbar__overflow, .js-editor-tinymce .tox-editor-header .tox-toolbar__primary {
+		background-color: var(--vbo-config-bg-color);
+	}
+	.js-editor-tinymce .tox:not([dir="rtl"]) .tox-toolbar__group:not(:last-of-type), .js-editor-tinymce .tox .tox-menubar + .tox-toolbar, .js-editor-tinymce .tox .tox-menubar + .tox-toolbar-overlord .tox-toolbar__primary {
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.js-editor-tinymce .tox:not([dir="rtl"]) .tox-toolbar__group:not(:last-of-type) {
+		border-right: 1px solid var(--vbo-config-border-color) !important;
+	}
+	.js-editor-tinymce .tox-split-button {
+		border: 1px solid var(--vbo-config-bg-color) !important;
+	}
+	.js-editor-tinymce .tox-split-button:hover {
+		box-shadow: none !important;
+		border: 1px solid var(--vbo-config-border-color) !important;
+		background: var(--vbo-input-style-nested-deactive);
+	}
+	.tox .tox-dialog .tox-button--secondary {
+		background-color: var(--vbo-input-style-deactive);
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.tox .tox-dialog .tox-button--secondary:hover {
+		background-color: var(--vbo-input-style-nested-deactive);
+	}
+	.tox.tox-tinymce-aux .tox-button--naked:hover:not(:disabled) {
+		background-color: var(--vbo-input-style-deactive);
+		border: 1px solid var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-collection--toolbar .tox-collection__item--active {
+		background-color: var(--vbo-input-style-deactive);
+	}
+	.tox.tox-tinymce-aux .tox-listboxfield .tox-listbox--select, .tox.tox-tinymce-aux .tox-textarea, .tox .tox-textfield, .tox .tox-toolbar-textfield {
+		background-color: var(--vbo-input-style) !important;
+		border-color: var(--vbo-config-border-color) !important;
+	}
+	.tox.tox-tinymce-aux .tox-listbox__select-chevron svg {
+		fill: var(--vbo-config-title-color);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog {
+		background-color: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn svg {
+		fill: var(--vbo-config-title-color);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn span {
+		color: var(--vbo-config-title-color);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn--enabled, .tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn--enabled:hover {
+		background-color: var(--vbo-input-style-nested-deactive);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn:hover {
+		background-color: var(--vbo-input-style-nested-deactive);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn:hover span, .tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn--enabled span {
+		color: var(--vbo-base-color);
+	}
+	.tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn:hover svg, .tox.tox-tinymce-aux .tox-pop__dialog .tox-tbtn--enabled svg {
+		fill: var(--vbo-base-color);
+	}
+	.tox.tox-tinymce-aux .tox-pop.tox-pop--top::before {
+		border-color: transparent transparent var(--vbo-config-bg-color) transparent;
+	}
+	.tox.tox-tinymce-aux .tox-pop.tox-pop--top::after {
+		border-color: transparent transparent var(--vbo-config-bg-color) transparent;
+	}
+	.tox.tox-tinymce-aux .tox-dialog__table tbody tr {
+		border-color: var(--vbo-config-border-color);
+	}
+	.tox.tox-tinymce-aux .tox-notification--error p {
+		color: #333 !important;
+	}
+	.tox.tox-tinymce-aux .tox-swatches__picker-btn svg {
+		fill: var(--vbo-config-title-color);
+	}
+	.js-editor-tinymce .tox .tox-statusbar {
+		background-color: var(--vbo-config-bg-color);
+		border-color: var(--vbo-config-border-color);
+	}
+	.js-editor-tinymce .tox-statusbar a, .js-editor-tinymce .tox-statusbar__path-item, .js-editor-tinymce .tox-statusbar__wordcount {
+		color: var(--vbo-config-title-color) !important;
+	}
+	joomla-toolbar-button .dropdown-menu  {
+		border-color: var(--vbo-config-border-color);
+	}
+	#jmodal-rss-feed .modal-footer {
+		background-color: var(--vbo-config-bg-color);
+		border-top: 1px solid var(--vbo-config-border-color);
+		box-shadow: none;
+	}
+}

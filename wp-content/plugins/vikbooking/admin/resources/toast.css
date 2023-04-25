@@ -1,0 +1,188 @@
+/* toast common */
+
+.vbo-toast-wrapper {
+	position: fixed;
+	width: 400px;
+	z-index: 2147483647;
+
+	transition: 0.4s ease all;
+	-moz-transition: 0.4s ease all;
+	-webkit-transition: 0.4s ease all;
+}
+.vbo-toast-wrapper.clickable {
+	cursor: pointer;
+}
+.vbo-toast-wrapper .toast-message {
+	border-radius: 10px;
+}
+.vbo-toast-wrapper .toast-message-content {
+	padding: 10px 15px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0;
+	color: #444;
+	background-color: rgba(64, 64, 64, 0.15);
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.20);
+}
+.vbo-toast-wrapper .toast-message-content.error {
+	background-color: rgba(153, 0, 0, 0.20)
+}
+.vbo-toast-wrapper .toast-message-content.success {
+	background-color: rgba(112, 204, 135, 0.40);
+}
+.vbo-toast-wrapper .toast-message-content.warning {
+	background-color: rgba(224, 137, 80, 0.35);
+}
+.vbo-toast-wrapper .toast-message-content.notice {
+	background-color: #fff;
+}
+
+/* toast hidden positions */
+.vbo-toast-wrapper.top-left,
+.vbo-toast-wrapper.top-center,
+.vbo-toast-wrapper.top-right {
+	/*
+	Use a higher margin to avoid seeing the toast on
+	browsers (like Safari) that lets the user to scroll
+	even if the page reached the end.
+	Same thing for the bottom position.
+	*/
+	top: -100px;
+	transform: translateY(-100%);
+}
+.vbo-toast-wrapper.top-left,
+.vbo-toast-wrapper.bottom-left {
+	left: 10px;
+}
+.vbo-toast-wrapper.top-right,
+.vbo-toast-wrapper.bottom-right {
+	right: 10px;
+}
+.vbo-toast-wrapper.top-center {
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+
+.vbo-toast-wrapper.bottom-left,
+.vbo-toast-wrapper.bottom-center,
+.vbo-toast-wrapper.bottom-right {
+	bottom: -100px;
+	transform: translateY(100%);
+}
+.vbo-toast-wrapper.bottom-center {
+	left: 50%;
+	transform: translate(-50%, 100%);
+}
+
+/* toast slide-in positions */
+
+.vbo-toast-wrapper.top-left.toast-slide-in,
+.vbo-toast-wrapper.top-center.toast-slide-in,
+.vbo-toast-wrapper.top-right.toast-slide-in {
+	transform: translateY(0%);
+	top: 10px;
+}
+.vbo-toast-wrapper.bottom-left.toast-slide-in,
+.vbo-toast-wrapper.bottom-center.toast-slide-in,
+.vbo-toast-wrapper.bottom-right.toast-slide-in {
+	transform: translateY(0%);
+	bottom: 15px;
+}
+
+.vbo-toast-wrapper.top-center.toast-slide-in,
+.vbo-toast-wrapper.bottom-center.toast-slide-in {
+	transform: translate(-50%, 0%);
+}
+
+/* shake effect */
+
+.vbo-toast-wrapper.do-shake {
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+.vbo-toast-wrapper.top-center.do-shake,
+.vbo-toast-wrapper.bottom-center.do-shake {
+	animation: shake-animation-center 0.82s cubic-bezier(.36, .07, .19, .97) both;
+	transform: translate3d(-50%, 0, 0) !important;
+}
+@keyframes shake-animation-center {
+	10%, 90% {
+		transform: translate3d(-50.5%, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(-49%, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-52%, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(-48%, 0, 0);
+	}
+}
+
+.vbo-toast-wrapper.top-left.do-shake,
+.vbo-toast-wrapper.top-right.do-shake,
+.vbo-toast-wrapper.bottom-left.do-shake,
+.vbo-toast-wrapper.bottom-right.do-shake {
+	animation: shake-animation-side 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+@keyframes shake-animation-side {
+	10%, 90% {
+		transform: translate3d(-0.5%, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(1%, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-2%, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(2%, 0, 0);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.vbo-toast-wrapper {
+		right: 10px !important;
+		width: calc(100% - 20px) !important;
+	}	
+}
+
+/* toast message template */
+
+.vbo-pushnotif-wrapper {
+	display: flex;
+	align-items: center;
+}
+.vbo-pushnotif-wrapper .push-notif-icon {
+	margin-right: 10px;
+}
+.vbo-pushnotif-wrapper .push-notif-icon i {
+	font-size: 32px;
+	font-weight: bold;
+}
+.vbo-pushnotif-wrapper .push-notif-icon img {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.vbo-pushnotif-wrapper .push-notif-text .push-notif-title {
+	font-size: larger;
+	font-weight: bold;
+}
+.vbo-pushnotif-wrapper .push-notif-text .push-notif-body {
+	font-weight: 500;
+}
+.vbo-pushnotif-wrapper .push-notif-text .push-notif-title + .push-notif-body {
+	margin-top: 5px;
+}

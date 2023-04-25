@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_PACKAGESLIST_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_PACKAGESLIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Packages List" >
+		<message><![CDATA[VikBooking Packages List]]></message>
+	</view>
+	<state>
+		<name>Packages List</name>
+		<description>VikBooking Packages List</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="sortby" type="list" default="dfrom" label="COM_VIKBOOKING_SORTBY_FIELD_SELECT_TITLE" description="">
+				<option value="dfrom">Validity Date</option>
+				<option value="name">Name</option>
+				<option value="cost">Price</option>
+				<option value="id">ID</option>
+			</field>
+			<field name="sorttype" type="list" default="asc" label="COM_VIKBOOKING_SORTTYPE_FIELD_SELECT_TITLE" description="">
+				<option value="asc">ASC</option>
+				<option value="desc">DESC</option>
+			</field>
+			<field name="reslim" type="text" default="20" label="COM_VIKBOOKING_RESLIM_FIELD_SELECT_TITLE" description="" filter="integer" />
+		</fieldset>
+	</fields>
+</metadata>
+

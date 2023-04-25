@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_OPERATORS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_OPERATORS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Rooms List" >
+		<message><![CDATA[VikBooking Operators Login]]></message>
+	</view>
+	<state>
+		<name>Operators Login</name>
+		<description>VikBooking Operators Login</description>
+	</state>
+</metadata>
+

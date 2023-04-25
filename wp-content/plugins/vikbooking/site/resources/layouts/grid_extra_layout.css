@@ -1,0 +1,269 @@
+.vbo-results-wrapper, .vbo-showprc-head-wrapper, .vbo-oconfirm-wrapper {
+	display: flex;
+}
+.vbo-results-head {
+	flex-basis: 22%;
+	margin-right: 10px;
+	align-self: self-start;
+	margin: 0 20px 0 0;
+}
+.vbo-results-head .vbo-results-head-det-lbl, .vbo-results-head .vbcheckinroom-lbl, .vbo-results-head .vbcheckoutroom-lbl {
+	font-weight: normal;
+	font-size: 14px;
+}
+.vbo-results-head .vbo-results-head-det-val {
+	font-size: 16px;
+}
+.vbo-results-head > div {
+	display: flex;
+	border: 0;
+	padding: 10px;
+	text-transform: inherit;
+	border: 0;
+	font-size: 14px;
+	font-weight: normal;
+}
+.vbo-results-head > div > i {
+	color: #365868;
+	width: 26px;
+	margin: 10px 10px 0 0;
+}
+.vbo-results-wrapper .vbo-searchresults-compact-wrap, .vbo-showprc-head-wrapper > form, .vbo-oconfirm-wrapper .vbo-oconfirm-summary-container, .vbo-searchresults-classic-wrap {
+	flex: 1;
+}
+.vbo-results-wrapper .vbo-searchresults-compact-wrap .vbo-room-result-wrap:first-child {
+	margin-top: 0;
+}
+.vbo-results-head > .vbo-results-chdates {
+	width: 100%;
+}
+.vbo-results-head .vbo-results-chdates .vbo-results-head-det-val {
+	display: inline-block;
+	width: 100%;
+}
+.vbo-results-head .vbo-results-chdates .vbo-results-head-det {
+	width: 100%;
+}
+.vbo-results-head > .vbo-results-chdates a {
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+	padding: 8px 10px;
+}
+.vbo-results-wrapper + .goback {
+	display: none;
+}
+.vbo-showprc-wrapper {
+	margin-top: 0;
+}
+.vblistcontainer .vblist {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vblistcontainer .vblist .room_result {
+	display: inline-block;
+	flex-basis: 33%;
+}
+.vblist {
+	margin:0;
+	padding:0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vblist .room_result {
+	flex-basis: 33%;
+	border: 0;
+}
+.vblist .room_result .room_result-inner {
+	margin: 10px;
+	border: 1px solid #ddd;
+	height: 100%;
+}
+.vblist .room_result .vblistroomblock {
+	display: block;
+	width: auto;
+	float: inherit;
+	min-height: inherit;
+	border: 0;
+}
+.vblist .room_result .vbimglistdiv {
+	display: block;
+	width: auto;
+	margin: 0;
+	float: none;
+	text-align: center;
+}
+.vblist .room_result .vbimglistdiv img {
+	margin-right: 0;
+}
+.vblist .room_result .vbcontdivtot {
+	float: none;
+	display: block;
+	left: inherit;
+}
+.vblist .room_result .vbcontdivtot .vbdivtot {
+	display: inherit;
+	float: inherit;
+}
+.vblist .vblistroomblock .vbo-info-room {
+	padding: 20px 20px 0;
+}
+.vblist .room_result .vbdescrlistdiv {
+	padding: 0;
+}
+.vblist .room_result .vbrowcname {
+	font-size: 20px;
+}
+.vblist .room_result .vbsrowprice {
+	margin-right: 0;
+	padding: 0 20px;
+}
+.vblist .room_result .vbsrowpricediv {
+	margin: 10px 0 3px 0;
+	padding: 3px 0;
+	text-align: left;
+}
+.vblist .room_result .vbrowroomcapacity {
+	margin: 10px 0 0 0;
+	text-align: left;
+}
+.vblist .room_result .vbrowroomcapacity i {
+	font-size: 15px;
+	margin: 0 -1px 0 0;
+}
+.vblist .room_result .roomlist_carats {
+	margin: 8px 0 0;
+}
+.vblist .room_result .vbulcarats li {
+	margin-bottom: 0;
+}
+.vblist .room_result .vbsrowpricediv .room_cost {
+	font-size: 22px;
+	display: inline-block;
+}
+.vblist .room_result .vbliststartfrom {
+	display: inline-block;
+}
+.vblist .room_result .vbselectordiv {
+	margin: 15px 20px 0;
+	border-top: 1px solid #eee;
+	padding: 0 0 10px;
+	width: auto;
+	display: block;
+}
+.vblist .room_result .vbselectordiv .vbselectr {
+	text-align: left;
+}
+.vblist .room_result .vbselectordiv .vbselectr a {
+	border-radius: 2px;
+	width: auto;
+	text-align: center;
+	padding: 8px 35px 8px 20px;
+	margin: 15px 0 0;
+	position: relative;
+}
+.vblist .room_result .vbselectordiv .vbselectr a:after {
+	content: ">";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	color: #fff;
+	left: 75%;
+}
+.vbo-rdet-descprice-block {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 0;
+	margin: 0 0 25px 0;
+	background: inherit;
+}
+.vbo-rdet-descprice-block .vb_detcostroomdet {
+	float: none;
+	display: block;
+	width: 100%;
+}
+.vbo-rdet-descprice-block .vb_detcostroom {
+	width: 100%;
+	padding: 0;
+}
+.vb_detcostroomdet .vblistroomnamedivprice {
+	padding: 0 0;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.vb_detcostroomdet .vblistroomname {
+	text-align: right;
+}
+.vb_detcostroom .vbliststartfromrdet {
+	display: inline-block;
+}
+.vb_detcostroom .vblistroomname .room_cost {
+	font-size: 32px;
+	display: inline-block;
+}
+.vb_detcostroom .vbliststartfromrdet {
+	font-size: 14px;
+}
+.vb_detcostroom .roomcustcostlabel {
+	font-size: 20px;
+}
+.vb_detcostroom .vbliststartfromrdet, .vb_detcostroom .roomcustcostlabel {
+	color: inherit;
+	text-transform: inherit;
+}
+.vbo-rdet-descprice-block .vbo-rdet-desc-cont {
+	order: 2;
+	min-height: inherit;
+	border-right: 0;
+	width: 100%;
+	float: none;
+	padding: 0;
+	background: inherit;
+}
+.vbrdetboxtop .room_carats {
+	width: 100%;
+	padding-top: 25px;
+	margin: 5px 0 18px 0;
+	border-top: 1px solid #ddd;
+}
+.vbrdetboxtop .room_carats .vbtith3 {
+	float: none;
+	display: block;
+	margin: 0px 10px 15px 0;
+	text-transform: inherit;
+	font-size: 21px;
+	font-weight: normal;
+}
+@media only screen and (max-width : 1280px) {
+	.vbo-results-wrapper, .vbo-showprc-head-wrapper, .vbo-oconfirm-wrapper {
+		flex-wrap: wrap;
+	}
+	.vbo-results-head {
+		flex-basis: 100%;
+		margin: 0 0 20px;
+	}
+	.vbo-results-head > div {
+		display: inline-block;
+		padding-right: 20px;
+	}
+	.vbo-results-head > div > i {
+		width: auto;
+	}
+	.vbo-results-head > .vbo-results-chdates {
+		width: auto;
+	}
+}
+@media only screen and (max-width : 960px) {
+	.vblistcontainer .vblist .room_result {
+		flex-basis: 50%;
+	}
+	.vbcontdivtot {
+		border-top: 0;
+	}
+}
+@media only screen and (max-width : 580px) {
+	.vblistcontainer .vblist .room_result {
+		flex-basis: 100%;
+	}
+}

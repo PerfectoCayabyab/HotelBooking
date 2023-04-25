@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_ROOMSLIST_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_ROOMSLIST_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Rooms List" >
+		<message><![CDATA[VikBooking Rooms List]]></message>
+	</view>
+	<state>
+		<name>Rooms List</name>
+		<description>VikBooking Rooms List</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request" addfieldpath="/vikbooking/admin/fields">
+			<field name="category_id" type="vbcategory" label="COM_VIKBOOKING_CATEGORY_FIELD_SELECT_TITLE" required="false" description="COM_VIKBOOKING_CATEGORY_FIELD_SELECT_TITLE_DESC" />
+			<field name="sortby" type="list" default="" label="COM_VIKBOOKING_SORTBY_FIELD_SELECT_TITLE" description="">
+				<option value="">Price</option>
+				<option value="name">Name</option>
+				<option value="id">ID</option>
+				<option value="random">Random</option>
+			</field>
+			<field name="sorttype" type="list" default="" label="COM_VIKBOOKING_SORTTYPE_FIELD_SELECT_TITLE" description="">
+				<option value="asc">ASC</option>
+				<option value="desc">DESC</option>
+			</field>
+			<field name="layoutstyle" type="list" default="list" label="COM_VIKBOOKING_LAYOUT_STYLE" description="">
+				<option value="list">COM_VIKBOOKING_LAYOUT_LIST</option>
+				<option value="grid">COM_VIKBOOKING_LAYOUT_GRID</option>
+			</field>
+			<field name="reslim" type="text" default="20" label="COM_VIKBOOKING_RESLIM_FIELD_SELECT_TITLE" description="" filter="integer" />
+		</fieldset>
+	</fields>
+</metadata>

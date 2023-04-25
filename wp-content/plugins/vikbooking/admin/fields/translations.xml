@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!-- Column nodes cannot have attributes called jlang because that is used for the Adapter Language definition. Reference attribute is used to print the name of the record to translate -->
+<!-- @wponly the column alias has been removed from the table rooms -->
+<VikBookingTranslations>
+	<Version>1.15</Version>
+	<Date>2022-01-27</Date>
+	<Author>Alessio Gaggii - E4J srl</Author>
+	<Translation table="#__vikbooking_rooms" name="VBOXMLTRANSLATEROOMS">
+		<Column name="name" type="text" reference="1">VBNEWROOMFIVE</Column>
+		<Column name="info" type="html">VBNEWROOMSEVEN</Column>
+		<Column name="smalldesc" type="textarea">VBNEWROOMSMALLDESC</Column>
+		<Column name="params" type="json" keys="custpricetxt,custpricesubtxt,custptitle,metakeywords,metadescription">VBNEWROOMPARAMS</Column>
+		<Column name="imgcaptions" type="json" keys="">VBIMGCAPTION</Column>
+	</Translation>
+	<Translation table="#__vikbooking_categories" name="VBOXMLTRANSLATECATEGORIES">
+		<Column name="name" type="text" reference="1">VBPVIEWCATEGORIESONE</Column>
+		<Column name="descr" type="html">VBPVIEWCATEGORIESDESCR</Column>
+	</Translation>
+	<Translation table="#__vikbooking_optionals" name="VBOXMLTRANSLATEOPTIONS">
+		<Column name="name" type="text" reference="1">VBNEWOPTONE</Column>
+		<Column name="descr" type="html">VBNEWOPTTWO</Column>
+	</Translation>
+	<Translation table="#__vikbooking_prices" name="VBOXMLTRANSLATETYPESPRICE">
+		<Column name="name" type="text" reference="1">VBNEWPRICEONE</Column>
+		<Column name="attr" type="text">VBNEWPRICETWO</Column>
+		<Column name="canc_policy" type="textarea">VBNEWPRICECANCPOLICY</Column>
+	</Translation>
+	<Translation table="#__vikbooking_seasons" name="VBOXMLTRANSLATESPECIALPRICES">
+		<Column name="spname" type="text" reference="1">VBSPNAME</Column>
+		<Column name="promotxt" type="html">VBOPROMOTEXT</Column>
+	</Translation>
+	<Translation table="#__vikbooking_characteristics" name="VBOXMLTRANSLATECHARACTERISTICS">
+		<Column name="name" type="text" reference="1">VBPVIEWCARATONE</Column>
+		<Column name="textimg" type="text">VBNEWCARATTHREE</Column>
+	</Translation>
+	<Translation table="#__vikbooking_gpayments" name="VBOXMLTRANSLATEPAYMENTS">
+		<Column name="name" type="text" reference="1">VBPSHOWPAYMENTSONE</Column>
+		<Column name="note" type="html">VBPSHOWPAYMENTSTHREE</Column>
+	</Translation>
+	<Translation table="#__vikbooking_custfields" name="VBOXMLTRANSLATECFIELDS">
+		<Column name="name" type="text" reference="1">VBPVIEWCUSTOMFONE</Column>
+		<Column name="choose" type="textarea">VBNEWCUSTOMFFOUR</Column>
+		<Column name="poplink" type="text">VBNEWCUSTOMFEIGHT</Column>
+	</Translation>
+	<Translation table="#__vikbooking_texts" name="VBOXMLTRANSLATETEXTS">
+		<Column name="exp" type="skip" reference="1"></Column>
+		<Column name="setting" type="textarea">VBOXMLCONTENT</Column>
+	</Translation>
+	<Translation table="#__vikbooking_packages" name="VBOXMLTRANSLATEPACKAGES">
+		<Column name="name" type="text" reference="1">VBNEWPKGNAME</Column>
+		<Column name="shortdescr" type="textarea">VBNEWPKGSHORTDESCR</Column>
+		<Column name="descr" type="html">VBNEWPKGDESCR</Column>
+		<Column name="conditions" type="html">VBNEWPKGCONDS</Column>
+		<Column name="benefits" type="textarea">VBNEWPKGBENEFITS</Column>
+	</Translation>
+	<Translation table="#__vikbooking_cronjobs" name="VBOXMLTRANSLATECRONJOBS">
+		<Column name="cron_name" type="text" reference="1">VBCRONNAME</Column>
+		<Column name="params" type="json" keys="subject,tpl_text">VBCRONPARAMS</Column>
+	</Translation>
+	<Translation table="#__vikbooking_greview_service" name="VBOPANELREVIEWS">
+		<Column name="service_name" type="text" reference="1">VBOCONFIGGRSERVICES</Column>
+	</Translation>
+	<Translation table="#__vikbooking_condtexts" name="VBO_COND_TEXTS">
+		<Column name="name" type="skip" reference="1"></Column>
+		<Column name="msg" type="html">VBO_CONDTEXT_MSG</Column>
+	</Translation>
+	<Translation table="#__vikbooking_countries" name="VBO_CONDTEXT_RULE_COUNTRIES">
+		<Column name="country_name" type="text" reference="1">VBNEWCUSTOMFCOUNTRY</Column>
+	</Translation>
+</VikBookingTranslations>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_PACKAGEDETAILS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_PACKAGEDETAILS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Package Details" >
+		<message><![CDATA[VikBooking Package Details]]></message>
+	</view>
+	<state>
+		<name>Package Details</name>
+		<description>VikBooking Package Details</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="pkgid" type="sql" default="" label="COM_VIKBOOKING_PKGDET_FIELD_SELECT_TITLE" query="SELECT id AS value, name AS title FROM #__vikbooking_packages" key_field="value" value_field="title" required="true">
+				<option value="">--</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

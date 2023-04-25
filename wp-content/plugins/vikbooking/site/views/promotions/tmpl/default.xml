@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VIKBOOKING_PROMOTIONS_VIEW_DEFAULT_TITLE">
+		<message>COM_VIKBOOKING_PROMOTIONS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<view title="Promotions" >
+		<message><![CDATA[VikBooking Promotions]]></message>
+	</view>
+	<state>
+		<name>Promotions</name>
+		<description>VikBooking Promotions</description>
+	</state>
+	<fields name="request">
+		<fieldset name="request">
+			<field name="showrooms" type="list" default="1" label="COM_VIKBOOKING_PROMOSHOWCARS_FIELD_TITLE" description="COM_VIKBOOKING_PROMOSHOWCARS_FIELD_TITLE_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="maxdate" type="list" default="6" label="COM_VIKBOOKING_PROMOMAXDATE_FIELD_TITLE" description="COM_VIKBOOKING_PROMOMAXDATE_FIELD_TITLE_DESC">
+				<option value="3">COM_VIKBOOKING_PROMOMAXDATE_FIELD_THREEM</option>
+				<option value="6">COM_VIKBOOKING_PROMOMAXDATE_FIELD_SIXM</option>
+				<option value="12">COM_VIKBOOKING_PROMOMAXDATE_FIELD_YEAR</option>
+			</field>
+			<field name="lim" type="text" label="COM_VIKBOOKING_PROMOTIONSLIM_FIELD_TITLE" required="false" description="COM_VIKBOOKING_PROMOTIONSLIM_FIELD_TITLE" default="10" />
+		</fieldset>
+	</fields>
+</metadata>
+

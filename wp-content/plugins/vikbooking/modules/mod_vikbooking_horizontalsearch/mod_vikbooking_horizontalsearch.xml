@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0.0" client="site" method="upgrade">
+	<name>MOD_VIKBOOKING_HORIZONTALSEARCH</name>
+	<author>E4J s.r.l.</author>
+	<creationDate>February 2, 2018</creationDate>
+	<copyright>Copyright (C) 2018 e4j - Extensionsforjoomla.com . All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tech@extensionsforjoomla.com</authorEmail>
+	<authorUrl>https://vikwp.com/</authorUrl>
+	<version>1.10</version>
+	<description>MOD_VIKBOOKING_HORIZONTALSEARCH_DESC</description>
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field
+					name="title"
+					type="text"
+					default=""
+					label="TITLE"
+				/>
+
+				<field
+					name="defadults"
+					type="number"
+					default="2"
+					label="DEFADULTS"
+				/>
+
+				<field
+					name="showcat"
+					type="list"
+					default="2"
+					label="SHOWCAT"
+				>
+					<option value="1">JYES</option>
+					<option value="2">JNO</option>
+				</field>
+
+				<field
+					name="room_id"
+					type="sql"
+					default="0"
+					label="FORCESINGLEROOMSEARCH"
+					description="FORCESINGLEROOMSEARCHHELP"
+					query="SELECT `id` AS `value`, `name` AS `title` FROM `#__vikbooking_rooms` ORDER BY `name` ASC"
+					key_field="value"
+					value_field="title"
+					required="false"
+				>
+					<option value="0">DISABLED</option>
+				</field>
+				
+				<field
+					name="category_id"
+					type="sql"
+					default="0"
+					label="FORCESINGLECATEGORYSEARCH"
+					description="FORCESINGLECATEGORYSEARCHHELP"
+					query="SELECT id AS value, name AS title FROM #__vikbooking_categories ORDER BY name ASC"
+					key_field="value"
+					value_field="title"
+					required="false"
+				>
+					<option value="0">DISABLED</option>
+				</field>
+
+				<field
+					name="datestype"
+					type="list"
+					default="standard"
+					label="SELDATESFORMAT"
+					description="SELDATESFORMATHELP"
+				>
+					<option value="standard">SELDATESFORMATDT</option>
+					<option value="human">SELDATESFORMATHU</option>
+					<option value="inquiry">SELDATESFORMAT_INQUIRY</option>
+				</field>
+
+				<field
+					name="mondayslen"
+					type="list"
+					default="long"
+					label="MONDAYSLEN"
+					description="MONDAYSLENHELP"
+				>
+					<option value="long">MONDAYSLENLONG</option>
+					<option value="3char">MONDAYSLEN3</option>
+				</field>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JLAYOUT"
+					description="JLAYOUT_DESC"
+				/>
+
+				<field
+					name="itemid"
+					type="menuitem"
+					prefix="vikbooking"
+					default=""
+					required="true"
+					label="JMENUITEM"
+					description="JMENUITEM_DESC"
+				/>
+
+			</fieldset>
+
+		</fields>
+	</config>
+
+</extension>
